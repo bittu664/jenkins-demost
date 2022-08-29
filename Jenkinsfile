@@ -4,7 +4,7 @@ pipeline{
         
         stages{
 
-              stage('sonarqube env setup')
+              stage('sonarqube env setup') {
                   steps{
 
                     sh '''export SONAR_SCANNER_VERSION=4.7.0.2747
@@ -15,8 +15,9 @@ pipeline{
                      export SONAR_SCANNER_OPTS="-server"
 
                     '''
-                  }   
-              stage('Quality Gate Status Check')
+                  }
+              }   
+              stage('Quality Gate Status Check'){
                   steps{
 
                     sh '''
@@ -29,6 +30,7 @@ pipeline{
                     '''
 
                   }
+              }
               
   
 		    	    
