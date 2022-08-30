@@ -19,7 +19,7 @@ pipeline{
                      -Dsonar.projectKey=python-test \\
                      -Dsonar.sources=. \\
                      -Dsonar.host.url=http://54.203.27.50:9000 \\
-                     -Dsonar.login=sqp_7e9cbc039c69648d20a55bc9c7550a7ca18f53a3
+                     -Dsonar.login=sqp_7e9cbc039c69648d20a55bc9c7550a7ca18f53a3 \\
 		     -Dsonar.analysis.mode=incremental
 
                     '''
