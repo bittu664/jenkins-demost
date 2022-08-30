@@ -13,6 +13,7 @@ pipeline{
                      unzip -o $HOME/.sonar/sonar-scanner.zip -d $HOME/.sonar/
                      export PATH=$SONAR_SCANNER_HOME/bin:$PATH
                      export SONAR_SCANNER_OPTS="-server"
+		     export SONAR_TOKEN="sqp_e3154bbad23001b9b2569b22c2ad78ecaea99945"
 
                      sonar-scanner \\
                      -Dsonar.projectKey=python-test \\
