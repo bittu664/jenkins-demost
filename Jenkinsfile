@@ -15,7 +15,7 @@ pipeline{
                      export SONAR_SCANNER_OPTS="-server"
 
                      sonar-scanner \\
-                     -Dsonar.projectKey=test \\
+                     -Dsonar.projectKey=python-test \\
                      -Dsonar.sources=. \\
                      -Dsonar.host.url=http://54.203.27.50:9000 \\
                      -Dsonar.login=sqp_e3154bbad23001b9b2569b22c2ad78ecaea99945
